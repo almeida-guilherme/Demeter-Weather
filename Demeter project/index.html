@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon">
+    <title>Demeter Weather</title>
+</head>
+<body>
+    <div id="audi" > </div>
+    <a name="home"></a>
+    <header>
+        
+        <div id="div1" >
+            <img src="./Assets/logo.png" id="logo" alt="logo">
+            <p id="marca">Demeter Weather</p>
+        </div>
+        <nav id="menuNav">
+            <a style="text-decoration: none;" href="#sobre" class="menu">Sobre</a>
+            <a style="text-decoration: none;" href="#contato" class="menu">Contato</a>
+            <a style="text-decoration: none;" href="#home" class="menu">Home</a>
+        </nav>
+    </header>
+    <main id="container" >
+
+        <section id="section1">
+            <div id="div2">
+                <input type="text" id="procuraInput" placeholder="Escreva a cidade aqui">
+                <button id="procuraBotao"> <img src="./Assets/search.png"  width="18cm"  alt=""></button>
+                <a href=""><button id="cleanBotao"><img src="./Assets/clean.png"  width="18cm"  alt=""></button></a>
+            </div>
+            <div id="nuvem">
+                <img src="./Assets/unknown.png" alt="">
+            </div>
+            <div id="citydiv">
+                <p id="cidade"></p>
+                <p id="data"></p>
+            </div>
+           <div id="tempdiv">
+                <p id="temperatura"></p> 
+                <p id="situacao"></p>
+           </div>
+           <div id="separador"></div>
+           <div id="div3">
+            <button id="localBotao" >UTILIZE ATUAL LOCALIZAÇÃO</button>
+           </div>
+        </section>
+       
+    </main>
+    <a name="sobre"></a>
+    <section id="section2">
+        <img src="./Assets/logo.png" id="imgInfo" alt="">
+        <p class="textInfo" >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aspernatur repellendus dolor harum, velit voluptate asperiores sint nam laborum id expedita unde error incidunt, delectus quia alias. Amet, asperiores incidunt!
+        </p>
+    </section>
+
+    <footer>
+        <a name="contato"></a>
+        <p class="pfooter">@contato-gmail.com</p>
+        <p class="pfooter">(11)4002-8922</p>
+        <p class="pfooter">@Instagram</p>
+    </footer>
+    <script src="./script.js"></script>
+
+</body>
+</html>

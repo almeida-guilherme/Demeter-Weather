@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@font-face {
+    font-family:'Julien Fincker' ;
+    src: url(./Assets/Julien\ Fincker\ -\ Finador\ Slab\ Medium.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: #2f4858;
+    width: 100wv;
+    height: 100wv;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1cm;
+    border-bottom: 1px solid #00c194;
+    background-color: #00af93;
+    position: sticky;
+    top: 0;
+}
+main{
+    border-bottom: 1px solid #00c194;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom:50px ;
+    background-color: #00af93;
+    padding-top: 1.5cm;
+}
+
+.pfooter{
+    display: flex;
+    font-family: 'Julien Fincker' ;
+    align-content: self;
+    color:#2f4858;
+    transition: color 0.6s;
+}
+
+.pfooter:hover{
+    color:#00697f;
+}
+
+#div1{
+    display: flex;
+}
+
+
+#logo{
+    width: 5cm;
+}
+
+#marca{
+    display: flex;
+    align-self: center;
+    font-family: 'Julien Fincker' ;
+    color:#2f4858;
+    transition: color 0.6s;
+}
+
+#marca:hover{
+    color:#00697f;
+}
+
+#menuNav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu{
+    color: #00697f;
+    background-color: white;
+    background-size: 5cm;
+    border-radius: 5px;
+    font-weight: 400px;
+    font-size: 18px;
+    width: 1.5cm;
+    height: 1cm;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s, width 0.5s, height 0.5s;
+}
+
+.menu:hover{
+    background-color: #00cf7b;
+    width: 1.8cm;
+    height: 1.2cm;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section1{
+    background-color: white;
+    border-radius: 20px;
+    width: 15cm;
+    height: 15cm;
+    margin-top: 5cm;
+    margin-bottom: 5cm;
+}
+
+#citydiv{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+#tempdiv{
+    display: flex;
+    justify-content: space-around;
+}
+
+#div2{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+#nuvem{
+    display: flex;
+    justify-content: center;
+}
+
+#procuraInput{
+    width: 5cm;
+    height: 0.8cm;
+}
+
+#procuraBotao{
+    border-radius: 1px;
+    width: 0.8cm;
+    background-color:#00af93 ;
+    transition: background-color 0.5s;
+}
+
+#procuraBotao:hover{
+    background-color: #00cf7b;
+    
+}
+
+#cleanBotao{
+    border-radius: 1px;
+    width: 0.8cm;
+    background-color:#00af93 ;
+    transition: background-color 0.5s;
+}
+
+#cleanBotao:hover{
+    background-color: #00cf7b;
+}
+
+#div3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6cm;
+    width: 16cm;    
+}
+
+#separador{
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background:#ccc ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#separador::before{
+    content: "ou";
+    color:#ccc;
+    font-size: 19px;
+    padding: 0 15px;
+    background: #fff;
+}
+
+#localBotao{
+    background-color: #00af93;
+    height: 1cm;
+    width: 50%;
+    border-radius: 8px;
+    transition: background-color 0.5s;
+}
+
+#localBotao:hover{
+    background-color: #00cf7b;
+}
+
+#section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 21cm;
+    background-color: #00697f;
+}
+
+.textInfo{
+    display: flex;
+    align-items: center;
+    width: 25cm;
+    height: 15cm;
+    align-self: center;
+    color: #012b21;
+    background-color: #00697f;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 0.8cm;
+}
+
+#imgInfo{
+    width: 15cm;
+    height: 15cm;
+    background-color: #008c94;
+    border-radius: 10cm;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 720px) and (max-height:1480px) {    
+    
+    *{
+        overflow: hidden;
+    }
+
+    header{
+        position: relative;
+        width: 720px;
+    }
+    
+
+    body{
+        width: 720px;
+        height: 10wv;
+    }
+
+    #menuNav{
+        display: none;
+    }
+    #section2{
+        display: none;
+    }
+
+    main{
+        width: 720px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 10cm;
+        width:720px;
+        background-color: #00af93;
+        
+    }
+}
+
