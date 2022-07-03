@@ -18,9 +18,10 @@
             <p id="marca">Demeter Weather</p>
         </div>
         <nav id="menuNav">
-            <a style="text-decoration: none;" href="#sobre" class="menu">Sobre</a>
-            <a style="text-decoration: none;" href="#contato" class="menu">Contato</a>
             <a style="text-decoration: none;" href="#home" class="menu">Home</a>
+            <a style="text-decoration: none;" href="#sobre" class="menu">Sobre</a>
+            <a style="text-decoration: none;" href="#ajude" class="menu">Ajude</a>
+            <a style="text-decoration: none;" href="#contato" class="menu">Contato</a>
         </nav>
     </header>
     <main id="container" >
@@ -47,7 +48,7 @@
             <button id="localBotao" >UTILIZE ATUAL LOCALIZAÇÃO</button>
            </div>
         </section>
-       
+        
     </main>
     <a name="sobre"></a>
     <section id="section2">
@@ -55,6 +56,35 @@
         <p class="textInfo" >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aspernatur repellendus dolor harum, velit voluptate asperiores sint nam laborum id expedita unde error incidunt, delectus quia alias. Amet, asperiores incidunt!
         </p>
+    </section>
+    <a name="ajude"></a>
+    <section class="section3">
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Assunto A</h3>
+                    <p>Lorem ipsum dolor sit amet </p>
+                    <a href="#">Saiba mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Assunto B</h3>
+                    <p>Lorem ipsum dolor sit amet </p>
+                    <a href="#">Saiba mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Assunto C</h3>
+                    <p>Lorem ipsum dolor sit amet </p>
+                    <a href="#">Saiba mais</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -64,6 +94,10 @@
         <p class="pfooter">@Instagram</p>
     </footer>
     <script src="./script.js"></script>
+    <script src="./vanilla-tilt.js"></script>
+    <script> VanillaTilt.init(document.querySelectorAll(".card"),{
+        max:25,speed:400,glare:true,"max-glare":1,
+    });</script>
 
 </body>
 </html>
